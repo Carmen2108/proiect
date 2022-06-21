@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AuCo - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="nav-bar-item" href="home.html"> Home </a>
+        <a class="nav-bar-item" href="leaderboards.html"> Leaderboards </a>
+        <a class="nav-bar-item" href="collection.html"> My Collection </a>
+        <div class="title"> AutographCollector </div>
+        <div class="user">
+            <a href="collection.html"> username </a>
+            <div class="balance">
+                <p id="value">balance: 100000$</p>
+                <button id="toggleBtn"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
+                <form class="balance-form" action="" method="POST">
+                    <input type="number" placeholder="Amount" name="amount" min="10" max="10000" step="5"
+                        class="user-input" required>
+                    <button type="submit" class="tu-btn">Add</button>
+                </form>
+            </div>
+        </div>
+        <a class="sign-out-btn" href="sign-in.html">Sign Out</a>
+    </header>
+
+    <main>
+        <section class="main-template">
+            <div class="my-body">
+                <div class="buy">
+                    <button>Buy this autograph</button>
+                </div>
+                <h1 style="color:#27a29e;font-family: 'Open Sans' ;font-weight: bold;text-align:center;">X'Autograph
+                </h1>
+                <h2 style="color:#27a29e;font-family: 'Open Sans' ;font-weight: bold;font-size:15px;padding-left:15%">
+                    Username</h2>
+                <img src="images/autograph.jpg" alt="autograph" style=" float:left; padding-left:10%; height:300px;">
+                <img src="images/stars.png" alt="stars" style=" float:right; width:30%;padding-right:10%;">
+                <div class="autograph-description">
+                    <ol>
+                        <p style="padding-right:84px">Domain:</p>
+                        <li>insert domain...</li><br><br>
+                        <p style="padding-right:55px">How I got it:</p>
+                        <li>insert how you got it...</li><br><br>
+                        <p style="padding-right:75px">Location:</p>
+                        <li>insert location...</li><br><br>
+                        <p style="padding-right:20px">The signed object:</p>
+                        <li>insert object...</li><br><br>
+                        <p style="padding-right:25px">Special mentions:</p>
+                        <li>insert extra mentions...</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="payments">
+            <p>Payment Options:</p>
+            <div class="payment-types">
+                <a href="https://www.mastercard.com"><i class="fa fa-cc-mastercard fa-2x"></i></a>
+                <a href="https://www.visa.com"><i class="fa fa-cc-visa fa-2x"></i></a>
+                <a href="https://www.paypal.com"><i class="fa fa-cc-paypal fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="authors"> Bejenariu Razvan-Andrei & Gruia Carmen</div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com"> <i class="fa fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com"> <i class="fa fa-instagram fa-2x"></i></a>
+            <a href="https://www.twitter.com"> <i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://www.linkedin.com"> <i class="fa fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,505 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position:sticky;
+    top: 0%;
+    width: 100%;
+    min-height: fit-content;
+    background: #00203FFF;
+    border-bottom-style: ridge;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.title {
+    color: #27a29e;
+    font-size: 3.5rem;
+}
+
+.nav-bar-item {
+    color: white;
+    font-size: 2rem;
+}
+
+.user a {
+    margin: 0;
+    padding: 0;
+    color: wheat;
+    font-size: 3rem;
+}
+
+.balance {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.balance button {
+    background: #00203FFF;
+    color: white;
+    border: 0;
+}
+
+.balance button:active {
+    color: green;
+}
+
+.balance-form {
+    display: none;
+    position: absolute;
+    bottom: -4.1rem;
+    background-color: #00203FFF;
+    width: max-content;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1.75rem;
+}
+
+.tu-btn {
+    background-color: #00203FFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 3px solid wheat;
+    border-radius: 25px;
+    align-self: center;
+}
+
+.user p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.sign-out-btn {
+    font-size: 2rem;
+    color: #27a29e;
+}
+
+footer {
+    width: 100%;
+    min-height: fit-content;
+    background: #00203FFF;
+    border-top-style: ridge;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.payments {
+    flex: 1;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payments a {
+    color: white;
+}
+
+.authors {
+    flex: 2;
+    color: #27a29e;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.social-media {
+    flex: 1;
+    font-size: 1.5rem;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media a {
+    color: white;
+}
+
+main {
+    flex-grow: 2;
+}
+
+.main-wrapper {
+    background: #27a29e;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 2;
+    width: 100vw;
+}
+
+.main-template {
+    background: #27a29e;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100%;
+}
+
+
+.my-body {
+    background: black;
+    justify-content: center;
+    flex-grow: 2;
+    width: 70vw;
+    height: 100%;
+    padding: 20px;
+}
+
+.search {
+    width: 50%;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    padding-left: 25%;
+    padding-bottom: 30px;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #27a29e;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #27a29e;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #27a29e;
+    background: #27a29e;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.autographs button {
+    width: 100%;
+    background-color: black;
+    display: block;
+    color: white;
+    border: 2px solid #27a29e;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.autographs a {
+    color: white;
+}
+
+.autographs button:hover {
+    background-color: #27a29e;
+    cursor: pointer;
+}
+
+.buy {
+    float: left;
+    position: absolute;
+}
+
+.buy-button button:hover {
+    background-color: #27a29e;
+    cursor: pointer;
+}
+
+
+.collections {
+    padding-left: 15%;
+}
+
+.collections button {
+    width: 80%;
+    background-color: black;
+    display: block;
+    color: white;
+    border: 2px solid #27a29e;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.collections button:hover {
+    background-color: #27a29e;
+}
+
+.collections a {
+    color: white;
+}
+
+.autograph-description {
+    display: inline-block;
+}
+
+.autograph-description p {
+    float: left;
+    color: white;
+}
+
+.autograph-description li {
+    display: inline-block;
+    color: white;
+    border: 2px solid #27a29e;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.autograph-informations {
+    padding-left: 5%;
+}
+
+.autograph-informations p {
+    color: white;
+    padding-left: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper button {
+    border: 2px solid #27a29e;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.autograph-informations input {
+    background-color: black;
+    color: white;
+    border: 2px solid #27a29e;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+}
+
+.download {
+    padding-top: 3%;
+    float: right;
+}
+
+.download label {
+    color: white;
+}
+
+.download input[list] {
+    background-color: #00203FFF;
+    color: white;
+}
+
+.filterDiv {
+    text-align: center;
+}
+
+.filterDiv:hover {
+    background-color: #27a29e;
+}
+
+.filterDiv a {
+    color: white;
+}
+
+.container button {
+    width: 100%;
+    background-color: black;
+    display: block;
+    color: white;
+    border: 2px solid #27a29e;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container button:hover {
+    background-color: #27a29e;
+    cursor: pointer;
+}
+
+
+.btn {
+    border: 2px solid #27a29e;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #27a29e;
+}
+
+.btn.active {
+    background-color: #00203FFF;
+    color: white;
+}
+
+/* Login Page */
+
+.main-login-wrapper {
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+
+.login-wrapper,
+.signup-wrapper {
+    background-color: #00203FFF;
+    width: 25rem;
+    border-radius: 25px;
+    border: 3px solid wheat;
+    padding: 10px;
+    font-size: 1.75rem;
+}
+
+.form-wrapper {
+    background-color: #00203FFF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder {
+    color: white;
+}
+
+.form-wrapper label {
+    margin-top: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+.user-input {
+
+    background-color: #00203FFF;
+    color: white;
+    width: clamp(fit-content, 20rem, 20rem);
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 3px solid #27a29e;
+    border-radius: 5rem;
+}
+
+.form-type {
+    background-color: #00203FFF;
+    color: wheat;
+    font-size: 3rem;
+    padding: 0.1rem;
+    text-align: center;
+    ;
+}
+
+.su-btn {
+    background-color: #00203FFF;
+    color: white;
+    width: clamp(fit-content, 20rem, 20rem);
+    margin-top: 3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 3px solid wheat;
+    border-radius: 25px;
+    align-self: center;
+}
+
+.su-btn:hover {
+    background-color: wheat;
+    color: #00203FFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar-item {
+        font-size: 1rem;
+    }
+
+    .user a {
+        font-size: 1.5rem;
+    }
+
+    .user p {
+        font-size: 0.75rem;
+    }
+
+    .sign-out-btn {
+        font-size: 1rem;
+    }
+
+    .payments {
+        font-size: 0.75rem;
+    }
+
+    .authors {
+        font-size: 1.25rem;
+    }
+
+    .social-media {
+        font-size: 0.75rem;
+    }
+
+    .login-wrapper,
+    .signup-wrapper {
+        width: 12.5rem;
+        font-size: 1rem;
+    }
+
+    .user-input {
+        font-size: 0.5rem;
+    }
+
+    .form-type {
+        font-size: 2rem;
+    }
+
+    .su-btn {
+        font-size: 0.5rem;
+    }
+
+}
